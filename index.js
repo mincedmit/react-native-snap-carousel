@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { ScrollView, Animated, Platform, Easing, I18nManager, ViewPropTypes } from 'react-native';
+import { ScrollView, Animated, Platform, Easing, I18nManager, View } from 'react-native';
 import shallowCompare from 'react-addons-shallow-compare';
 import _debounce from 'lodash.debounce';
 
@@ -77,11 +77,11 @@ export default class Carousel extends Component {
         /**
         * Global wrapper's style
         */
-        containerCustomStyle: ViewPropTypes.style,
+        containerCustomStyle: View.propTypes.style,
         /**
         * Content container's style
         */
-        contentContainerCustomStyle: ViewPropTypes.style,
+        contentContainerCustomStyle: View.propTypes.style,
         /**
         * If enabled, snapping will be triggered once
         * the ScrollView stops moving, not when the
